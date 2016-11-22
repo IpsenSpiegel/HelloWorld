@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(MainActivity.TAG, "on create()");
 
         //intentamos hacer una llamada a la 2a actividad
+        //TODO vamos
         Intent MyIntent = new Intent(this, SecondActivity.class);
         startActivityForResult(MyIntent, 0);
     }
