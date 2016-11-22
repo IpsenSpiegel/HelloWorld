@@ -18,9 +18,10 @@ public class SecondActivity extends Activity {
 
         Intent resultIntent = new Intent();
         resultIntent.putExtra("returnValue", "string value");
-
         setResult(Activity.RESULT_OK, resultIntent);
         finish();
+
+
     }
 
     @Override

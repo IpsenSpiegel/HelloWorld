@@ -1,15 +1,19 @@
 package com.example.ipsenspiegel.myapplication;
 
 import android.content.Intent;
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity implements View.OnClickListener {
 
 
     private static final String TAG = MainActivity.class.getSimpleName();
+    public static final int ACTIVITY_REQUEST_CODE = 100;
+
 
 
 
@@ -23,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(MainActivity.TAG, "on create()");
 
         //intentamos hacer una llamada a la 2a actividad
-        //TODO vamos
+
         Intent MyIntent = new Intent(this, SecondActivity.class);
         startActivityForResult(MyIntent, 0);
     }
@@ -36,4 +40,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    @Override
+    public void onClick(View view) {
+
+    }
+
 }
